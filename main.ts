@@ -1,7 +1,6 @@
-let Dado = 0
+let NUMEROS_DADO = 0
 input.onGesture(Gesture.Shake, function () {
-    let NUMEROS_DADO = 0
-    Dado = randint(1, 6)
+    NUMEROS_DADO = randint(1, 6)
     if (NUMEROS_DADO == 1) {
         basic.showLeds(`
             . . . . .
